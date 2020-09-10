@@ -29,11 +29,11 @@ def print_output(title_list, header,links_list):
     print("===" * 20)
     if(len(title_list)>0):
         for i in range(0,len(title_list)):
-            stats +="""\n > :memo: {number}. ![{title}]("{link}")            
+            stats +="""\n > :memo: {number}. [{title}]({link})            
 """.format(title=title_list[i], link=links_list[i],number=i+1)
             print("["+title_list[i]+"]("+links_list[i]+")")
     else:
-        print("No blogs In this month")
+        print("No blogs for given period")
     print("===" * 20)
     return stats
 
